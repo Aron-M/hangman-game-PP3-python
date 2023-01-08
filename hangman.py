@@ -42,15 +42,15 @@ words = ['balloon', 'aeroplane', 'computer', 'corridor', 'television', 'universi
 word = random.choice(words).lower()
 
 
-guessed_correctly = []
-guessed_incorrectly = []
+guessed_right = []
+guessed_wrong = []
 tries = 6
 hangman_count = -1
 
 while tries > 0:
     output = ''
     for letter in word:
-        if letter in guessed_correctly:
+        if letter in guessed_right:
             output += letter
         else:
             output += '_'
@@ -59,5 +59,5 @@ while tries > 0:
     print("Try to guess the correct word: ",output)
     print("You have ", tries," chances left")
     guess = input().lower()
-    if guess in guessed_correctly or guess in guessed_incorrectly:
+    if guess in guessed_right or guess in guessed_wrong:
         print("You have already guessed", guess, " ,please try again!")
