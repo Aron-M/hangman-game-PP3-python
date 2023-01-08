@@ -61,3 +61,6 @@ while tries > 0:
     guess = input().lower()
     if guess in guessed_right or guess in guessed_wrong:
         print("You have already guessed", guess, " ,please try again!")
+    elif guess in word:
+        print("That was great! Well done, you guessed the right letter!")
+        guessed_right.append(guess)
