@@ -53,8 +53,11 @@ while tries > 0:
         if letter in guessed_correctly:
             output += letter
         else:
-            output += '_ '
+            output += '_'
     if output == word:
         break
-    print("Guess the word: ",output)
-    print(tries," chances left")
+    print("Try to guess the correct word: ",output)
+    print("You have ", tries," chances left")
+    guess = input().lower()
+    if guess in guessed_correctly or guess in guessed_incorrectly:
+        print("You have already guessed", guess, " ,please try again!")
