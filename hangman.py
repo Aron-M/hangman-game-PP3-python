@@ -69,3 +69,4 @@ while tries > 0:
         hangman_count = hangman_count + 1
         tries = tries-1
         guessed_wrong.append(guess)
+        print(hangman1[hangman_count])
