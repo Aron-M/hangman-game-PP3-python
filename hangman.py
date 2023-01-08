@@ -64,3 +64,8 @@ while tries > 0:
     elif guess in word:
         print("That was great! Well done, you guessed the right letter!")
         guessed_right.append(guess)
+    else:
+        print("Sorry, but you have guessed a wrong letter! Please try again.")
+        hangman_count = hangman_count + 1
+        tries = tries-1
+        guessed_wrong.append(guess)
