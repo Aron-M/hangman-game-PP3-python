@@ -97,8 +97,7 @@ while tries > 0:
         print(hangman1[hangman_count])
     
     if tries == 0:
-        print("GAME OVER, YOU LOST! The correct word was  ")
-        print("Please type 'p' to play again")
+        print("GAME OVER, YOU LOST!)
     
     if __name__ == "__main__":
         hangman()
