@@ -97,7 +97,7 @@ while tries > 0:
         print(hangman1[hangman_count])
     
     if tries == 0:
-        print("GAME OVER, YOU LOST!)
+        print("GAME OVER, YOU LOST!")
     
     if __name__ == "__main__":
         hangman()
