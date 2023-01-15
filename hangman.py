@@ -1,6 +1,5 @@
 import random
-def hangman():
-    hangman1 = [
+hangman = [
 """
 +---+
     |
@@ -62,7 +61,7 @@ def hangman():
 """
 ]
 
-words = ['balloon', 'aeroplane', 'computer', 'corridor', 'television', 'university', 'paraglide', 'submarine', 'ferriswheel']
+words = ['balloon', 'helicopter', 'computer', 'corridor', 'television', 'university', 'paraglide', 'submarine', 'ferriswheel']
 
 word = random.choice(words).lower()
 
@@ -94,10 +93,8 @@ while tries > 0:
         hangman_count = hangman_count + 1
         tries = tries-1
         guessed_wrong.append(guess)
-        print(hangman1[hangman_count])
+        print(hangman[hangman_count])
     
     if tries == 0:
         print("GAME OVER, YOU LOST!")
     
-    if __name__ == "__main__":
-        hangman()
